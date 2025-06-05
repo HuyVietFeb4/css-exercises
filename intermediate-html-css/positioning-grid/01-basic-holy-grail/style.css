@@ -46,3 +46,34 @@ html {
   color: white;
   text-align: left;
 }
+
+
+/* GRID */
+.container {
+  display: inline-grid;
+  gap: 15px;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 12.5% 12.5% 62.5% 12.5%;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.nav, .article {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
